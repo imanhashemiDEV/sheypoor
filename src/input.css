@@ -1,0 +1,11 @@
+@tailwind base;
+
+@layer base{
+    @font-face {
+        font-family: vazir;
+        src: url('../fonts/woff2/Vazir-FD.woff2');
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
