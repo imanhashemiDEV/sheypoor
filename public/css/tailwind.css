@@ -437,7 +437,7 @@ video {
 @font-face {
   font-family: vazir;
 
-  src: url('../fonts/woff2/Vazir.woff2');
+  src: url('../fonts/woff2/Vazir-FD.woff2');
 }
 
 *, ::before, ::after {
@@ -538,4 +538,8 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.font-vazir {
+  font-family: vazir;
 }
