@@ -434,12 +434,6 @@ video {
   display: none;
 }
 
-@font-face {
-  font-family: vazir;
-
-  src: url('../fonts/woff2/Vazir-FD.woff2');
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -538,8 +532,4 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-}
-
-.font-vazir {
-  font-family: vazir;
 }
