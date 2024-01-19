@@ -3,7 +3,7 @@
 @layer base{
     @font-face {
         font-family: vazir;
-        src: url('../fonts/woff2/Vazir-FD.woff2');
+        src: url('../fonts/woff2/Vazir.woff2');
     }
 }
 
