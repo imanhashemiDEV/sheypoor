@@ -674,10 +674,6 @@ video {
   height: 0.5rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
@@ -692,22 +688,6 @@ video {
 
 .h-px {
   height: 1px;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-36 {
-  height: 9rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-44 {
-  height: 11rem;
 }
 
 .w-14 {
@@ -944,10 +924,6 @@ video {
 
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
   }
 }
 

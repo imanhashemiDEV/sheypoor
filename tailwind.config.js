@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding:'0.1rem'
+      padding: '0.1rem'
     },
-    fontFamily:{
-      'vazir':"vazir",
-   },
+    fontFamily: {
+      'vazir': "vazir",
+    },
     extend: {},
   },
   plugins: [],
