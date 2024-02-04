@@ -16,6 +16,18 @@
         font-family: "vazir bold";
         src: url('../fonts/woff2/FD/Vazir-Bold-FD.woff2') format('woff2');
     }
+
+    .float-label-input:focus-within label,
+    .float-label-input input:not(:placeholder-shown) ~ label {
+      transform: translateY(-1.5rem) scale(0.85);
+      color: #3e7bfa;
+   }
+
+   input:checked ~ .radio {
+    color:white;
+    background-color: green;
+  }
+
 }
 
 @tailwind components;
