@@ -57,14 +57,22 @@
             </div>
         </header>
 
-        <section  class="flex flex-col items-center mt-2 lg:flex-row">
+        <div class="items-center justify-between hidden max-w-screen-xl px-4 mt-8 mb-4 lg:flex">
+            <div class="flex items-center">
+                <p class="text-2xl font-bold ">ثبت آگهی</p>
+            </div>
+            <div class="px-10 py-1 text-base border text-color-main rounded-2xl border-color-main">
+                    پاک کردن فرم
+            </div>
+        </div>
 
-            <div class="order-1 w-full px-4 pb-8 border-b border-gray-400 lg:w-1/2 lg:order-2">
+        <section  class="flex flex-col items-center mt-2 lg:flex-row">
+            <div class="order-1 w-full px-4 border-gray-400 lg:w-1/2 lg:order-2">
 
               <h2 class="mt-2 text-base font-semibold">انتخاب عکس</h2>
               <p class="mt-2 text-sm text-gray-400">یک تصویر بهتر از هزار کلمه. با قرار دادن عکس شانس دیده شدن آگهی‌تان را ۵ برابر کنید.</p>
 
-              <div class="relative flex gap-2 mt-4">
+              <div class="relative flex gap-2 pb-8 mt-4 border-b">
 
                   <div class="flex flex-col items-center justify-center w-1/4 border-2 border-dashed rounded-lg border-color-main text-color-main aspect-square">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -97,6 +105,11 @@
                   <input type="file" class="absolute inset-0 opacity-0 cursor-pointer">
 
               </div>
+
+              <h2 class="hidden mt-4 text-lg lg:inline-block">با ثبت آگهی در شیپور، شما <span class="font-bold text-color-main">شرایط و قوانین</span> آن را پذیرفته‌اید.</h2>
+              <div class="items-center justify-center hidden w-1/4 px-4 py-2 mt-4 font-semibold text-white lg:flex bg-color-main rounded-2xl">
+                ثبت آگهی
+             </div>
             
             </div>
             <div class="order-2 w-full px-4 lg:w-1/2 lg:order-1">
@@ -104,7 +117,6 @@
             </div>
         </section>
 
-       
 
     </div>
 
