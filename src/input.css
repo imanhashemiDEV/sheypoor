@@ -24,9 +24,11 @@
    }
 
    input:checked ~ .radio {
-    color:white;
-    background-color: green;
-  }
+    border: 1px solid #3e7bfa;
+    color: #3e7bfa;
+    background-color:#9dbff9; 
+   }
+
 
 }
 

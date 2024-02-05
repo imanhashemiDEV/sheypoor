@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
@@ -64,6 +66,11 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addVariant }) {
+      // addVariant('radio-checked', '&:checked ~ label')
+      addVariant('input-focused', '&:focus ~ label')
+    })
+  ],
 }
 

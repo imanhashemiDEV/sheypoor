@@ -8,7 +8,7 @@
 </head>
 <body class="font-vazir bg-neutral-50">
 
-    <div class="container flex-col justify-center max-w-screen-xl">
+    <div class="container flex-col justify-center max-w-screen-xl mb-16">
 
         <header class="sticky top-0 z-20 flex items-center justify-between h-12 px-2 py-10 border-b border-gray-300 lg:py-12 bg-neutral-50 lg:h-16 gap-x-3">
             <a href="#" class="hidden lg:inline-block">
@@ -149,19 +149,22 @@
                     </div>
                     <p class="mt-2 text-sm text-rose-600">لطفا این قسمت را تکمیل کنید</p>
                      
-                    <div class="flex flex-col mt-8">
-                         <h2 class="mb-4 text-lg font-semibold text-gray-600">نوع کاربر</h2>
-                        <div class="flex">
-                            <div class="rounded-lg">
-                                <input type="radio" id="item1" class="opacity-0" checked>
-                                <label for="item1" class="px-4 py-2 rounded-lg cursor-pointer radio">فرد</label>
-                            </div>
-                            <div class="rounded-lg">
-                                <input type="radio" id="item2" class="opacity-0">
-                                <label for="item2" class="px-4 py-2 rounded-lg cursor-pointer radio">فرد</label>
-                            </div>
-                        </div>
+                    <div class="mt-8">
+                        <h2 class="mb-4 text-lg font-semibold text-gray-600">نوع کاربر</h2>
 
+                        <div class="flex">
+
+                            <div class="rounded-lg">
+                                  <input type="radio" id="item1" class="invisible" name="userType">
+                                  <label for="item1" class="px-6 py-1 text-sm bg-gray-200 border radio rounded-2xl text-neutral-400 border-neutral-400">فرد</label>
+                            </div>
+                            <div class="rounded-lg">
+                                <input type="radio" id="item2" class="invisible" name="userType" checked>
+                                <label for="item2" class="px-6 py-1 text-sm bg-gray-200 border radio rounded-2xl text-neutral-400 border-neutral-400">شرکت یا فروشگاه</label>
+                          </div>
+
+
+                        </div>
                     </div>
 
 
