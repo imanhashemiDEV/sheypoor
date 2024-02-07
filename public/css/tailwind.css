@@ -671,6 +671,10 @@ input:checked ~ .radio {
   z-index: 20;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .order-1 {
   order: 1;
 }
@@ -687,6 +691,10 @@ input:checked ~ .radio {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-4 {
@@ -733,14 +741,6 @@ input:checked ~ .radio {
   margin-top: 2rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .flex {
   display: flex;
 }
@@ -755,6 +755,10 @@ input:checked ~ .radio {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.h-1\/2 {
+  height: 50%;
 }
 
 .h-10 {
@@ -795,6 +799,18 @@ input:checked ~ .radio {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-2\/3 {
+  height: 66.666667%;
+}
+
+.h-\[42rem\] {
+  height: 42rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/2 {
@@ -851,6 +867,14 @@ input:checked ~ .radio {
 
 .w-px {
   width: 1px;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[38rem\] {
+  width: 38rem;
 }
 
 .max-w-screen-lg {
@@ -942,6 +966,10 @@ input:checked ~ .radio {
 
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-2xl {
@@ -1047,6 +1075,10 @@ input:checked ~ .radio {
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-700\/70 {
+  background-color: rgb(64 64 64 / 0.7);
+}
+
 .bg-rose-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(225 29 72 / var(--tw-bg-opacity));
@@ -1071,6 +1103,14 @@ input:checked ~ .radio {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-10 {
@@ -1138,6 +1178,11 @@ input:checked ~ .radio {
   padding-bottom: 1rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1168,6 +1213,11 @@ input:checked ~ .radio {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -1278,6 +1328,40 @@ input:checked ~ .radio {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #e0cbcb;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9;
+}
+
+body.modal-open {
+  overflow-y: hidden;
+}
+
+.placeholder\:text-lg::-moz-placeholder {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.placeholder\:text-lg::placeholder {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .focus-within\:border-blue-400:focus-within {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
@@ -1348,6 +1432,30 @@ input:checked ~ .radio {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
+  .lg\:w-\[48rem\] {
+    width: 48rem;
+  }
+
+  .lg\:w-\[42rem\] {
+    width: 42rem;
+  }
+
+  .lg\:w-\[40rem\] {
+    width: 40rem;
+  }
+
+  .lg\:w-\[38rem\] {
+    width: 38rem;
   }
 
   .lg\:grid-cols-10 {
