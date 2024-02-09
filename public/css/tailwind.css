@@ -464,6 +464,10 @@ video {
     background-color:#9dbff9; 
    } */
 
+.modal-open{
+  overflow-y: hidden;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -666,6 +670,10 @@ video {
   z-index: 20;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .order-1 {
   order: 1;
 }
@@ -788,6 +796,14 @@ video {
   height: 2rem;
 }
 
+.h-\[42rem\] {
+  height: 42rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -836,12 +852,20 @@ video {
   width: 2rem;
 }
 
+.w-\[38rem\] {
+  width: 38rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-px {
   width: 1px;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-screen-lg {
@@ -933,6 +957,10 @@ video {
 
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-2xl {
@@ -1038,6 +1066,10 @@ video {
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-800\/60 {
+  background-color: rgb(38 38 38 / 0.6);
+}
+
 .bg-rose-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(225 29 72 / var(--tw-bg-opacity));
@@ -1062,6 +1094,14 @@ video {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-10 {
@@ -1127,6 +1167,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-8 {
@@ -1269,8 +1314,34 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body.modal-open {
-  overflow-y: hidden;
+.scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #9dbff9;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9dbff9;
+}
+
+.placeholder\:text-gray-300::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-300::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .focus-within\:border-blue-400:focus-within {
@@ -1286,6 +1357,11 @@ body.modal-open {
 .hover\:text-color-main:hover {
   --tw-text-opacity: 1;
   color: rgb(62 123 250 / var(--tw-text-opacity));
+}
+
+.focus\:border-color-main:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(62 123 250 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1400,5 +1476,6 @@ body.modal-open {
     padding-right: 4rem;
   }
 }
+
 
 

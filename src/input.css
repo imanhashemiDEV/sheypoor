@@ -29,6 +29,11 @@
     background-color:#9dbff9; 
    } */
 
+   .modal-open{
+    overflow-y: hidden;
+   }
+
+
 
 }
 
@@ -47,18 +52,15 @@
       }
     
       .scrollbar::-webkit-scrollbar-thumb {
-        background: #e0cbcb;
+        background: #9dbff9;
         border-radius: 100vh;
         border: 3px solid #f6f7ed;
       }
     
       .scrollbar::-webkit-scrollbar-thumb:hover {
-        background: #c0a0b9;
-      }
-
-      body.modal-open {
-        overflow-y: hidden;
-      }
+        background: #9dbff9;
+      }  
 }
+
 
 
