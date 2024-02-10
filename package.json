@@ -2,8 +2,12 @@
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   },
-
-  "scripts":{
-    "dev":"npx tailwindcss -i ./src/input.css -o ./public/css/tailwind.css --watch"
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/tailwind.css --watch",
+    "js-dev": "npx esbuild src/scripts.js --outdir=public/js --bundle --watch"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.5",
+    "esbuild": "^0.20.0"
   }
 }

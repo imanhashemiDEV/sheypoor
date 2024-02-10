@@ -32,6 +32,8 @@
    .modal-open{
     overflow-y: hidden;
    }
+   
+   [x-cloak] { display: none !important; }
 
 
 

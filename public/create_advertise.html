@@ -6,15 +6,15 @@
     <title>Sheypoor</title>
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
-<body class="relative font-vazir bg-neutral-50 modal-open">
+<body class="relative font-vazir bg-neutral-50 " x-data="{ CategoryModal: false }" x-bind:class="{'modal-open': CategoryModal}">
+    
+     <div x-cloak x-show="CategoryModal"  class="absolute inset-0 z-30 flex items-center justify-center w-screen h-screen bg-neutral-800/60">
 
-     <div class="absolute inset-0 z-30 flex items-center justify-center w-screen h-screen bg-neutral-800/60">
-
-        <div class="flex flex-col justify-center w-[38rem] h-[42rem] bg-white p-8 rounded-xl">
+        <div  class="flex flex-col justify-center w-[38rem] h-[42rem] bg-white p-8 rounded-xl">
 
           <div class="flex items-center justify-between px-4 py-2">
             <h2 class="text-2xl font-semibold">دسته بندی ها</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg x-on:click="CategoryModal=false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>             
           </div>
@@ -172,7 +172,7 @@
                        <p class="mr-4 text-sm font-semibold">ثبت آگهی</p>
                 </div>
                 <div class="px-6 py-2 text-sm font-semibold border cursor-pointer text-color-main rounded-2xl border-color-main">
-                       پاک کردن فرم
+                       پاک کردن فرم  <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
                 </div>
 
             </div>
@@ -261,7 +261,7 @@
 
                 <form class="flex flex-col px-4" >
 
-                    <div class="relative w-full mt-8 border-b float-label-input border-color-main">
+                    <div class="relative w-full mt-8 border-b float-label-input border-color-main" x-on:click="CategoryModal=true">
                         <input type="text" class="w-full p-3 bg-transparent input-focused:-translate-y-6 input-focused:text-color-main input-focused:scale-75 focus:outline-none" placeholder=" ">
                         <label for="" class="absolute right-0 px-2 text-lg font-semibold text-gray-600 transition duration-200 ease-in-out top-3">دسته بندی</label>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute left-0 w-5 h-5 top-3">
@@ -406,6 +406,6 @@
     </footer>
    
     
-    <script src="js/scripts.js"></script>
+    <script type="module" src="js/scripts.js"></script>
 </body>
 </html>
