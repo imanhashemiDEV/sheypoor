@@ -3206,10 +3206,4 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
   // src/scripts.js
   window.Alpine = module_default;
   module_default.start();
-  var likes = document.querySelectorAll(".like");
-  likes.forEach((like) => {
-    like.addEventListener("click", function(e) {
-      e.preventDefault();
-    });
-  });
 })();
