@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheypoor</title>
     <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body class="relative font-vazir bg-neutral-50 " x-data="{ CategoryModal: false }" x-bind:class="{'modal-open': CategoryModal}">
     
     
 
-    <div class="container flex-col justify-center max-w-screen-xl mb-16">
+    <div class="flex flex-col justify-center max-w-screen-xl mb-16 lg:container">
 
         <header class="sticky top-0 z-20 items-center justify-between hidden h-12 px-2 py-10 border-b border-gray-300 lg:flex lg:py-12 bg-neutral-50 lg:h-16 gap-x-3">
             <a href="#" class="hidden lg:inline-block">
@@ -42,7 +43,27 @@
             </div>
         </header>
 
+        <div class="max-w-screen-xl lg:my-8 lg:container">
+            <div class="h-96 swiper mySwiper lg:rounded-2xl">
+                <div class=" swiper-wrapper">
+                  <div class=" swiper-slide bg-rose-500">Slide 1</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 2</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 3</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 4</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 5</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 6</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 7</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 8</div>
+                  <div class=" swiper-slide bg-rose-500">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+
     </div>
+
+    
 
     <!-- desktop footer -->
     <footer class="flex-col items-center justify-center hidden pt-2 lg:flex bg-neutral-100">
@@ -135,5 +156,27 @@
    
     
     <script src="js/scripts.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            breakpoints: {
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+            },
+          });
+    </script>
 </body>
 </html>
