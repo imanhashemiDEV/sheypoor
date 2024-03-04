@@ -56,24 +56,9 @@
                   <div class=" swiper-slide bg-rose-500">Slide 8</div>
                   <div class=" swiper-slide bg-rose-500">Slide 9</div>
                 </div>
-                <div class="absolute z-20 flex items-center justify-center w-10 h-10 -translate-y-1/2 rounded-full bg-slate-600/75 swiper-button-next-custom top-1/2 left-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                      </svg>                      
-                </div>
-                <div class="swiper-button-prev-custom"></div>
-                <div class="absolute z-30 flex justify-between w-full px-4 lg:hidden top-6">
-                    <div class="p-2 bg-slate-600/75 rounded-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </div>
-                    <div class="p-2 bg-slate-600/75 rounded-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
               </div>
         </div>
 
@@ -183,8 +168,8 @@
               clickable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next-custom",
-                prevEl: ".swiper-button-prev-custom",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
               },
             breakpoints: {
               1024: {
