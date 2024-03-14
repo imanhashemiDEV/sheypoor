@@ -724,12 +724,21 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-1 {
@@ -1230,10 +1239,6 @@ video {
   padding: 1rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -1271,6 +1276,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-1 {
@@ -1566,6 +1576,11 @@ video {
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
 }
 
+.hover\:border-color-main:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(62 123 250 / var(--tw-border-opacity));
+}
+
 .hover\:bg-color-main-lighter:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(102 152 250 / var(--tw-bg-opacity));
@@ -1619,6 +1634,11 @@ video {
 .radio-checked\:text-color-main-darker:checked ~ label {
   --tw-text-opacity: 1;
   color: rgb(0 79 196 / var(--tw-text-opacity));
+}
+
+.hover\:child\:text-color-main > *:hover {
+  --tw-text-opacity: 1;
+  color: rgb(62 123 250 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {

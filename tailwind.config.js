@@ -70,6 +70,7 @@ module.exports = {
     plugin(function({ addVariant }) {
       addVariant('input-focused', '&:focus ~ label')
       addVariant('radio-checked', '&:checked ~ label')
+      addVariant('child', '& > *')
     })
   ],
 }
